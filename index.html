@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Laknatin - Profil Oyen Netanyahu</title>
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <link rel="shortcut icon" type="image/svg+xml" href="./favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@400;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css" />
+    <meta name="theme-color" content="#0B1D39" />
+    <meta name="color-scheme" content="dark" />
+</head>
+<body>
+    <header class="navbar" role="banner">
+        <div class="navbar__inner container">
+            <div class="brand" aria-label="Laknatin">
+                <svg class="brand__svg" width="520" height="160" viewBox="0 0 520 160" xmlns="http://www.w3.org/2000/svg" aria-label="Logo LaknatIN">
+                  <text x="10" y="110" font-family="Arial Black, Gadget, sans-serif" font-weight="900" font-size="88" fill="#0077B5" style="user-select:none;">Laknat</text>
+                  <rect x="360" y="45" width="140" height="90" fill="white" rx="24" ry="24" />
+                  <text x="430" y="95" font-family="Arial Black, Gadget, sans-serif" font-weight="900" font-size="88" fill="#0077B5" text-anchor="middle" dominant-baseline="middle" style="user-select:none;">IN</text>
+                </svg>
+            </div>
+            <input type="checkbox" id="nav-toggle" class="navbar__checkbox" aria-label="Toggle navigasi" />
+            <label for="nav-toggle" class="navbar__toggle" aria-hidden="true">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+            <nav class="nav" aria-label="Utama">
+                <a href="#" class="nav__link is-active">Beranda</a>
+                <a href="#experience" class="nav__link">Pengalaman</a>
+                <a href="#skills" class="nav__link">Keahlian</a>
+                <a href="#certifications" class="nav__link">Sertifikasi</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="layout container" role="main">
+        <aside class="sidebar-left" aria-label="Navigasi profil">
+            <div class="card user-mini">
+                <img class="user-mini__avatar" src="./assets/profile.webp" alt="Foto profil" />
+                <div class="user-mini__name">Oyen Netanyahu </div>
+                <div class="user-mini__headline">Keset Kos"an • Soil Generator</div>
+                <div class="user-mini__stats">
+                    <div><span>1.2K</span> koneksi</div>
+                    <div><span>87</span> pengikut</div>
+                </div>
+            </div>
+        </aside>
+
+        <section class="main-content">
+            <article class="card profile-card" id="profile">
+                <div class="profile-card__header">
+                    <div class="profile-card__banner" aria-hidden="true"></div>
+                    <div class="profile-card__video" aria-label="Video profil">
+                        <iframe src="https://www.youtube.com/embed/mBQADLsy2xQ?rel=0&modestbranding=1&color=white" title="Video Profil" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
+                    </div>
+                    <img class="profile-card__avatar" src="./assets/profile.webp" alt="Foto profil" />
+                </div>
+                <div class="profile-card__body">
+                    <h1 class="profile-card__name">Oyen Netanyahu Simatupang</h1>
+                    <div class="profile-card__headline">Keset Kos"an • Soil Generator Expert & Vacum Cleaner</div>
+                    <div class="profile-card__meta">Surabaya, Indonesia • Jasa Cakar Jok Motor</div>
+                    <p class="profile-card__summary">
+                        Mendesai motif jok motor yang elegan, etis nan eksotis untuk produk yang berdampak besar. Fokus pada sistem desain, aksesibilitas, dan kolaborasi lintas tim sesuai SDG yang ke-berapa?
+                    </p>
+                </div>
+            </article>
+
+            <section class="card" id="experience">
+                <h2 class="section-title">Pengalaman</h2>
+                <div class="timeline">
+                    <div class="timeline__item">
+                        <div class="timeline__marker"></div>
+                        <div class="timeline__content">
+                            <div class="exp">
+                                <a class="exp__media-link" href="#exp-cat-delivery">
+                                    <img class="exp__media" src="./assets/cat-delivery.webp" alt="Logistik End-to-End Pengiriman Kucing Melalui J&T Banyuwangi-Perumdos" />
+                                </a>
+                                <div class="exp__body">
+                                    <div class="item-title">Logistik End-to-End Pengiriman Kucing Melalui J&T Banyuwangi-Perumdos</div>
+                                    <div class="item-meta">Jul 2024</div>
+                                    <p class="exp__caption">“Memfasilitasi perpindahan aset biologis secara seamless dan tepat waktu dengan mitigasi risiko stres transportasi minimal.”</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline__item">
+                        <div class="timeline__marker"></div>
+                        <div class="timeline__content">
+                            <div class="exp">
+                                <a class="exp__media-link" href="#exp-cat-bombing">
+                                    <img class="exp__media" src="./assets/cat-bombing.webp" alt="Manajemen Anggaran Pakan Premium dengan ROI Negatif" />
+                                </a>
+                                <div class="exp__body">
+                                    <div class="item-title">Memproduksi Pupuk Organik di dalam Kos</div>
+                                    <div class="item-meta">Aug 2024</div>
+                                    <p class="exp__caption">“Melakukan produksi berkelanjutan terhadap kesuburan lantai kamar kos demi kontribusi pada SDG ke-2,12,13 dan ke-15.”</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline__item">
+                        <div class="timeline__marker"></div>
+                        <div class="timeline__content">
+                            <div class="exp">
+                                <a class="exp__media-link" href="#exp-cat-eat">
+                                    <img class="exp__media" src="./assets/cat-eat.webp" alt="Manajemen Anggaran Pakan Premium dengan ROI Negatif" />
+                                </a>
+                                <div class="exp__body">
+                                    <div class="item-title">Manajemen Anggaran Pakan Premium dengan RON 980</div>
+                                    <div class="item-meta">Aug 2024</div>
+                                    <p class="exp__caption">“Melakukan evaluasi pengeluaran berkelanjutan terhadap bahan baku konsumsi dengan dampak signifikan terhadap cashflow owner.”</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline__item">
+                        <div class="timeline__marker"></div>
+                        <div class="timeline__content">
+                            <div class="exp">
+                                <a class="exp__media-link" href="#exp-cat-comp">
+                                    <img class="exp__media" src="./assets/cat-comp.webp" alt="Finalis Kompetisi Mukbang Kucing Tingkat Internasional" />
+                                </a>
+                                <div class="exp__body">
+                                    <div class="item-title">Finalis Chinese Cat Vacum Cleaner</div>
+                                    <div class="item-meta">Sep 2024</div>
+                                    <p class="exp__caption">“Mengoptimalkan intake nutrisi dalam durasi kompetitif sambil mempertahankan konsistensi ekspresi wajah yang memikat juri global.”</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <details class="exp-more">
+                    <summary class="btn btn-outline btn-summary" aria-label="Lihat semua pengalaman"></summary>
+                    <div class="timeline">
+                        <div class="timeline__item">
+                            <div class="timeline__marker"></div>
+                            <div class="timeline__content">
+                                <div class="exp">
+                                    <a class="exp__media-link" href="#exp-cat-lahir">
+                                        <img class="exp__media" src="./assets/cat-lahir.webp" alt="Koordinasi Reproduksi Antar Kucing Kos dalam Lingkup Sosial Terbatas" />
+                                    </a>
+                                    <div class="exp__body">
+                                        <div class="item-title">Koordinasi Reproduksi Antar Kucing Kos dalam Lingkup Sosial Terbatas</div>
+                                        <div class="item-meta">Nov 2024</div>
+                                        <p class="exp__caption">“Memimpin inisiatif peningkatan populasi feline dengan kolaborasi bersama kucing Ibu Kos (walaupun owner kena marah).”</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="timeline__item">
+                            <div class="timeline__marker"></div>
+                            <div class="timeline__content">
+                                <div class="exp">
+                                    <a class="exp__media-link" href="#exp-cat-namrud">
+                                        <img class="exp__media" src="./assets/cat-namrud.webp" alt="Pengelolaan Singgasana Tradisional dalam Konteks Kepemimpinan Kucing" />
+                                    </a>
+                                    <div class="exp__body">
+                                        <div class="item-title">Menduduki Singgasana Raja Namrud</div>
+                                        <div class="item-meta">Dec 2024</div>
+                                        <p class="exp__caption">“Mengimplementasikan strategi duduk berdaulat sebagai bentuk proklamasi kekuasaan dan dominasi ruang kerja.”</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="timeline__item">
+                            <div class="timeline__marker"></div>
+                            <div class="timeline__content">
+                                <div class="exp">
+                                    <a class="exp__media-link" href="#exp-cat-ngace">
+                                        <img class="exp__media" src="./assets/cat-ngace.webp" alt="Transformasi Postur dari Quadrupedal ke Bipedal dalam Kucing Modern" />
+                                    </a>
+                                    <div class="exp__body">
+                                        <div class="item-title">Transformasi Postur dari Quadrupedal ke Bipedal dalam Kucing Modern</div>
+                                        <div class="item-meta">Jan 2025</div>
+                                        <p class="exp__caption">“Menginisiasi inovasi biomekanis pada lokomosi kucing dengan hasil peningkatan efisiensi navigasi ruang domestik.”</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="timeline__item">
+                            <div class="timeline__marker"></div>
+                            <div class="timeline__content">
+                                <div class="exp">
+                                    <a class="exp__media-link" href="#exp-cat-penyet">
+                                        <img class="exp__media" src="./assets/cat-penyet.webp" alt="Adaptasi Multi-Fungsional Sebagai Entitas Kucing dan Kuliner Sambal Terasi" />
+                                    </a>
+                                    <div class="exp__body">
+                                        <div class="item-title">Adaptasi Multi-Fungsional Sebagai Entitas Kucing Penyet Sambal Terasi</div>
+                                        <div class="item-meta">Mar 2025</div>
+                                        <p class="exp__caption">“Mengeksplorasi sinergi antara bentuk biologis kucing dan produk kuliner tradisional dalam pandangan dukun cirebon.”</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="timeline__item">
+                            <div class="timeline__marker"></div>
+                            <div class="timeline__content">
+                                <div class="exp">
+                                    <a class="exp__media-link" href="#exp-cat-pincang">
+                                        <img class="exp__media" src="./assets/cat-pincang.webp" alt="Manajemen Krisis Pascakecelakaan Kendaraan Bermotor Tipe Beat Karbu" />
+                                    </a>
+                                    <div class="exp__body">
+                                        <div class="item-title">Manajemen Krisis Pascakecelakaan Kendaraan pasca insiden Beat Karbu jamet sialan</div>
+                                        <div class="item-meta">May 2025</div>
+                                        <p class="exp__caption">“Melaksanakan protokol pemulihan fungsional dan rehabilitasi dari pincang pasca insiden jalan raya.”</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="timeline__item">
+                            <div class="timeline__marker"></div>
+                            <div class="timeline__content">
+                                <div class="exp">
+                                    <a class="exp__media-link" href="#exp-cat-psikolog">
+                                        <img class="exp__media" src="./assets/cat-psikolog.webp" alt="Konsultasi Psikologis Feline untuk Peer Support Komunitas Kucing" />
+                                    </a>
+                                    <div class="exp__body">
+                                        <div class="item-title">Konsultasi Psikologis Feline untuk Peer Support anak FTIRS yang setroke</div>
+                                        <div class="item-meta">Jul 2025</div>
+                                        <p class="exp__caption">“Memberikan intervensi psikologis dan terapi berbasis Juara Filter Rasa Mangga dalam pengelolaan stress sosial antar kucing.”</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </details>
+            </section>
+
+            <section class="card" id="skills">
+                <h2 class="section-title">Keahlian</h2>
+                <div class="chips">
+                    <span class="chip">Cakar Jok Motor</span>
+                    <span class="chip">Kawin Lari</span>
+                    <span class="chip">Generate Pupuk Organik</span>
+                    <span class="chip">Cakar Majikan</span>
+                    <span class="chip">Gigit Majikan</span>
+                    <span class="chip">Ngejebol Karung Whiskas</span>
+                    <span class="chip">Ngejatuhin Monitor LED</span>
+                    <span class="chip">Ngejatuhin Laptop</span>
+                    <span class="chip">Turu</span>
+                </div>
+            </section>
+
+            <section class="card" id="certifications">
+                <h2 class="section-title">Sertifikasi</h2>
+                <ul class="list">
+                    <li class="list__item">
+                        <div class="list__title">Certified Soil Generator</div>
+                        <div class="list__meta">Dukun Cirebon Foundation • 2023</div>
+                    </li>
+                    <li class="list__item">
+                        <div class="list__title">Redistribution Nasi Padang Expert</div>
+                        <div class="list__meta">PT. Pala Bapak • 2022</div>
+                    </li>
+                    <li class="list__item">
+                        <div class="list__title">Manipulation Expert</div>
+                        <div class="list__meta">Laknatin Training Center • 2021</div>
+                    </li>
+                </ul>
+            </section>
+        </section>
+
+        <aside class="sidebar-right" aria-label="Panel aksi">
+            <div class="card actions">
+                <h2 class="section-title">Gift Alok bang!</h2>
+                <a class="btn btn-primary" href="https://wa.me/6285133262359?text=Aku%20mau%20beli%20oyenmu%2050%20juta%20angkut%21%21%21" target="_blank" rel="noopener" aria-label="Hubungi via WhatsApp - Adopsi">Adopsi</a>
+                <a class="btn btn-ghost" href="https://wa.me/6285133262359?text=Bang%20bagi%20nomer%20Gopey%21%21%0ASaya%20nak%20gift%20100k%20aja" target="_blank" rel="noopener" aria-label="Hubungi via WhatsApp - Donasi">Donasi</a>
+                <a class="btn btn-outline" href="https://wa.me/6285133262359?text=Kamu%20mau%20ga%20Jadi%20Cowok%20Aku%20^_^%20 <_>" target="_blank" rel="noopener" aria-label="Hubungi via WhatsApp - Adopsi Ownwernya">Adopsi Ownwernya (cewek only)</a>
+                <p class="fineprint">Mari bantu sumber penghidupan untuk profil ini serta menjaga PT. Gudang Garam agar tidak jadi lay-off</p>
+            </div>
+
+            <div class="card suggestions">
+                <h2 class="section-title">Disarankan untuk dinotice!!</h2>
+                <div class="suggestion">
+                    <a href="https://www.tiktok.com/@ahmadasoy77_" target="_blank" rel="noopener">
+                        <img src="https://p16-sign-va.tiktokcdn.com/tos-maliva-avt-0068/7d76b17f2aea49b655163b48144818a1~tplv-tiktokx-cropcenter:1080:1080.jpeg?dr=14579&refresh_token=68c42958&x-expires=1758214800&x-signature=ZQM%2BpO3c4%2B69W8wGdlqH%2F1%2B3jfM%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=sg1" alt="Profil" />
+                    </a>
+                    <div>
+                        <a href="https://www.tiktok.com/@ahmadasoy77_" target="_blank"  rel="noopener" class="suggestion__name">Ibnu Rajin Beramal</a>
+                        <div class="suggestion__role">Wong Pelayaran</div>
+                    </div>
+                    <a href="https://www.tiktok.com/@ahmadasoy77_" target="_blank" rel="noopener" class="btn btn-mini">Ikuti</a>
+                </div>
+                <div class="suggestion">
+                    <a href="https://www.instagram.com/nmhfauziyyah/" target="_blank" rel="noopener">
+                        <img src="https://media.licdn.com/dms/image/v2/D5603AQEVg0aPw-1o3A/profile-displayphoto-shrink_200_200/B56ZUscvwyGsAc-/0/1740207488760?e=1761177600&v=beta&t=pCKuw8pfwUBuI-Gd8XYCSNrsM4LpyAE4Fk9PfioWAT4" alt="Profil" />
+                    </a>
+                    <div>
+                        <a href="https://www.instagram.com/nmhfauziyyah/" target="_blank" rel="noopener" class="suggestion__name">Ni'mah Bengkel Keputih</a>
+                        <div class="suggestion__role">Tambal Ban</div>
+                    </div>
+                    <a href="https://www.instagram.com/nmhfauziyyah/" target="_blank" rel="noopener" class="btn btn-mini">Ikuti</a>
+                </div>
+            </div>
+        </aside>
+    </main>
+
+    
+    <!-- Lightbox modals (no-JS, CSS :target) -->
+    <div class="lightboxes" aria-hidden="true">
+        <section id="exp-cat-delivery" class="lightbox" aria-label="Preview media cat-delivery">
+            <a href="#" class="lightbox__backdrop" aria-hidden="true"></a>
+            <div class="lightbox__card" role="dialog" aria-modal="true">
+                <a href="#" class="lightbox__close" aria-label="Tutup">×</a>
+                <img src="./assets/cat-delivery.webp" alt="Logistik End-to-End Pengiriman Kucing Melalui J&T Banyuwangi-Perumdos" />
+            </div>
+        </section>
+        <section id="exp-cat-bombing" class="lightbox" aria-label="Preview media cat-eat">
+            <a href="#" class="lightbox__backdrop" aria-hidden="true"></a>
+            <div class="lightbox__card" role="dialog" aria-modal="true">
+                <a href="#" class="lightbox__close" aria-label="Tutup">×</a>
+                <img src="./assets/cat-bombing.webp" alt="Memproduksi Pupuk Organik" />
+            </div>
+        </section>
+        <section id="exp-cat-eat" class="lightbox" aria-label="Preview media cat-eat">
+            <a href="#" class="lightbox__backdrop" aria-hidden="true"></a>
+            <div class="lightbox__card" role="dialog" aria-modal="true">
+                <a href="#" class="lightbox__close" aria-label="Tutup">×</a>
+                <img src="./assets/cat-eat.webp" alt="Manajemen Anggaran Pakan Premium dengan ROI Negatif" />
+            </div>
+        </section>
+        <section id="exp-cat-comp" class="lightbox" aria-label="Preview media cat-comp">
+            <a href="#" class="lightbox__backdrop" aria-hidden="true"></a>
+            <div class="lightbox__card" role="dialog" aria-modal="true">
+                <a href="#" class="lightbox__close" aria-label="Tutup">×</a>
+                <img src="./assets/cat-comp.webp" alt="Finalis Kompetisi Mukbang Kucing Tingkat Internasional" />
+            </div>
+        </section>
+        <section id="exp-cat-lahir" class="lightbox" aria-label="Preview media cat-lahir">
+            <a href="#" class="lightbox__backdrop" aria-hidden="true"></a>
+            <div class="lightbox__card" role="dialog" aria-modal="true">
+                <a href="#" class="lightbox__close" aria-label="Tutup">×</a>
+                <img src="./assets/cat-lahir.webp" alt="Koordinasi Reproduksi Antar Kucing Kos dalam Lingkup Sosial Terbatas" />
+            </div>
+        </section>
+        <section id="exp-cat-namrud" class="lightbox" aria-label="Preview media cat-namrud">
+            <a href="#" class="lightbox__backdrop" aria-hidden="true"></a>
+            <div class="lightbox__card" role="dialog" aria-modal="true">
+                <a href="#" class="lightbox__close" aria-label="Tutup">×</a>
+                <img src="./assets/cat-namrud.webp" alt="Menduduki Singgasana Raja Namrud" />
+            </div>
+        </section>
+        <section id="exp-cat-ngace" class="lightbox" aria-label="Preview media cat-ngace">
+            <a href="#" class="lightbox__backdrop" aria-hidden="true"></a>
+            <div class="lightbox__card" role="dialog" aria-modal="true">
+                <a href="#" class="lightbox__close" aria-label="Tutup">×</a>
+                <img src="./assets/cat-ngace.webp" alt="Transformasi Postur dari Quadrupedal ke Bipedal dalam Kucing Modern" />
+            </div>
+        </section>
+        <section id="exp-cat-penyet" class="lightbox" aria-label="Preview media cat-penyet">
+            <a href="#" class="lightbox__backdrop" aria-hidden="true"></a>
+            <div class="lightbox__card" role="dialog" aria-modal="true">
+                <a href="#" class="lightbox__close" aria-label="Tutup">×</a>
+                <img src="./assets/cat-penyet.webp" alt="Adaptasi Multi-Fungsional Sebagai Entitas Kucing dan Kuliner Sambal Terasi" />
+            </div>
+        </section>
+        <section id="exp-cat-pincang" class="lightbox" aria-label="Preview media cat-pincang">
+            <a href="#" class="lightbox__backdrop" aria-hidden="true"></a>
+            <div class="lightbox__card" role="dialog" aria-modal="true">
+                <a href="#" class="lightbox__close" aria-label="Tutup">×</a>
+                <img src="./assets/cat-pincang.webp" alt="Manajemen Krisis Pascakecelakaan Kendaraan Bermotor Tipe Beat Karbu" />
+            </div>
+        </section>
+        <section id="exp-cat-psikolog" class="lightbox" aria-label="Preview media cat-psikolog">
+            <a href="#" class="lightbox__backdrop" aria-hidden="true"></a>
+            <div class="lightbox__card" role="dialog" aria-modal="true">
+                <a href="#" class="lightbox__close" aria-label="Tutup">×</a>
+                <img src="./assets/cat-psikolog.webp" alt="Konsultasi Psikologis Feline untuk Peer Support" />
+            </div>
+        </section>
+    </div>
+
+    <footer class="footer container" role="contentinfo">
+        <div>© 2025 Kelompok P35 Tok Dalang Ranggi — Modul 1 PemWeb</div>
+      
+    </footer>
+</body>
+</html>
+
+
