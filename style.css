@@ -17,15 +17,33 @@
   --navbar-h: clamp(60px, 7vw, 72px);
 }
 
-* { box-sizing: border-box; }
-html, body { height: 100%; }
-body {
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
   margin: 0;
+}
+
+/* Background utama halaman */
+body {
   font-family: Roboto, "Open Sans", Nunito, system-ui, -apple-system, Segoe UI, Arial, sans-serif;
   color: var(--text);
-  background: radial-gradient(1200px 600px at 10% -10%, rgba(21,101,192,0.12), transparent),
-              radial-gradient(900px 500px at 90% -20%, rgba(21,101,192,0.08), transparent),
-              var(--bg);
+
+  /* fallback warna dasar */
+  background-color: var(--bg);
+
+  /* gradien dekoratif */
+  background-image: 
+    radial-gradient(1200px 600px at 10% -10%, rgba(21,101,192,0.12), transparent),
+    radial-gradient(900px 500px at 90% -20%, rgba(21,101,192,0.08), transparent);
+
+  /* biar full halaman mulus */
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+
   line-height: 1.6;
   padding-top: var(--navbar-h);
   font-size: clamp(14px, 1.1vw + 0.2rem, 16px);
