@@ -407,5 +407,6 @@ section.card {
 
 .nav__link.is-active {
   background: #fff;     /* background putih */
-  color: #000f72;          /* teks jadi hitam biar kontras */
+  color: #000;          /* teks jadi hitam biar kontras */
 }
+
