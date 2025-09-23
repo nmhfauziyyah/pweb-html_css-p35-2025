@@ -4,6 +4,9 @@ Repository ini berisi tugas **Praktikum Pemrograman Web (PWEB)**.
 Project yang dibuat berupa **Landing Page** dan **CV Online** dengan menggunakan **HTML** dan **CSS**.
 
 ---
+Credit by :
+1. Ahmad Ibnu Athaillah (5027241024)
+2. Ni'mah Fauziyyah A (5027241103)
 
 ## 📌 Struktur Repository
 
