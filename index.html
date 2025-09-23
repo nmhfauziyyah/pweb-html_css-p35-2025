@@ -33,6 +33,7 @@
             <nav class="nav" aria-label="Utama">
                 <a href="#" class="nav__link is-active">Beranda</a>
                 <a href="#experience" class="nav__link">Pengalaman</a>
+                <a href="#education" class="nav__link">Pendidikan</a>
                 <a href="#skills" class="nav__link">Keahlian</a>
                 <a href="#certifications" class="nav__link">Sertifikasi</a>
             </nav>
@@ -94,21 +95,6 @@
                         <div class="timeline__marker"></div>
                         <div class="timeline__content">
                             <div class="exp">
-                                <a class="exp__media-link" href="#exp-cat-bombing">
-                                    <img class="exp__media" src="./assets/cat-bombing.webp" alt="Manajemen Anggaran Pakan Premium dengan ROI Negatif" />
-                                </a>
-                                <div class="exp__body">
-                                    <div class="item-title">Memproduksi Pupuk Organik di dalam Kos</div>
-                                    <div class="item-meta">Aug 2024</div>
-                                    <p class="exp__caption">“Melakukan produksi berkelanjutan terhadap kesuburan lantai kamar kos demi kontribusi pada SDG ke-2,12,13 dan ke-15.”</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="timeline__item">
-                        <div class="timeline__marker"></div>
-                        <div class="timeline__content">
-                            <div class="exp">
                                 <a class="exp__media-link" href="#exp-cat-eat">
                                     <img class="exp__media" src="./assets/cat-eat.webp" alt="Manajemen Anggaran Pakan Premium dengan ROI Negatif" />
                                 </a>
@@ -139,22 +125,6 @@
                 </div>
                 <details class="exp-more">
                     <summary class="btn btn-outline btn-summary" aria-label="Lihat semua pengalaman"></summary>
-                    <div class="timeline">
-                        <div class="timeline__item">
-                            <div class="timeline__marker"></div>
-                            <div class="timeline__content">
-                                <div class="exp">
-                                    <a class="exp__media-link" href="#exp-cat-lahir">
-                                        <img class="exp__media" src="./assets/cat-lahir.webp" alt="Koordinasi Reproduksi Antar Kucing Kos dalam Lingkup Sosial Terbatas" />
-                                    </a>
-                                    <div class="exp__body">
-                                        <div class="item-title">Koordinasi Reproduksi Antar Kucing Kos dalam Lingkup Sosial Terbatas</div>
-                                        <div class="item-meta">Nov 2024</div>
-                                        <p class="exp__caption">“Memimpin inisiatif peningkatan populasi feline dengan kolaborasi bersama kucing Ibu Kos (walaupun owner kena marah).”</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
 
                         <div class="timeline__item">
                             <div class="timeline__marker"></div>
@@ -220,30 +190,36 @@
                             </div>
                         </div>
 
-                        <div class="timeline__item">
-                            <div class="timeline__marker"></div>
-                            <div class="timeline__content">
-                                <div class="exp">
-                                    <a class="exp__media-link" href="#exp-cat-psikolog">
-                                        <img class="exp__media" src="./assets/cat-psikolog.webp" alt="Konsultasi Psikologis Feline untuk Peer Support Komunitas Kucing" />
-                                    </a>
-                                    <div class="exp__body">
-                                        <div class="item-title">Konsultasi Psikologis Feline untuk Peer Support anak FTIRS yang setroke</div>
-                                        <div class="item-meta">Jul 2025</div>
-                                        <p class="exp__caption">“Memberikan intervensi psikologis dan terapi berbasis Juara Filter Rasa Mangga dalam pengelolaan stress sosial antar kucing.”</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </details>
+            </section>
+
+            <section class="card" id="education">
+                <h2 class="section-title">Pendidikan</h2>
+                <ul class="list">
+                    <li class="list__item">
+                    <div class="list__title">SD Negeri 1 Laknatin</div>
+                    <div class="list__meta">2008 – 2014</div>
+                    </li>
+                    <li class="list__item">
+                    <div class="list__title">SMP Negeri 13 Ratatulie</div>
+                    <div class="list__meta">2014 – 2017</div>
+                    </li>
+                    <li class="list__item">
+                    <div class="list__title">SMA Negeri 5 Zimbabowe</div>
+                    <div class="list__meta">2017 – 2020</div>
+                    </li>
+                    <li class="list__item">
+                    <div class="list__title">Universitas Kucing Indonesia</div>
+                    <div class="list__meta">2020 – Sekarang</div>
+                    </li>
+                </ul>
             </section>
 
             <section class="card" id="skills">
                 <h2 class="section-title">Keahlian</h2>
                 <div class="chips">
                     <span class="chip">Cakar Jok Motor</span>
-                    <span class="chip">Kawin Lari</span>
                     <span class="chip">Generate Pupuk Organik</span>
                     <span class="chip">Cakar Majikan</span>
                     <span class="chip">Gigit Majikan</span>
@@ -383,11 +359,31 @@
         </section>
     </div>
 
+    <script>
+        const sections = document.querySelectorAll("section");
+        const navLinks = document.querySelectorAll(".nav__link");
+
+        window.addEventListener("scroll", () => {
+            let current = "";
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop - 80;
+                if (scrollY >= sectionTop) {
+                current = section.getAttribute("id");
+            }
+        });
+
+        navLinks.forEach(link => {
+        link.classList.remove("is-active");
+        if (link.getAttribute("href") === "#" + current) {
+            link.classList.add("is-active");
+        }
+        });
+    });
+    </script>
+
     <footer class="footer container" role="contentinfo">
         <div>© 2025 Kelompok P35 Tok Dalang Ranggi — Modul 1 PemWeb</div>
       
     </footer>
 </body>
 </html>
-
-
