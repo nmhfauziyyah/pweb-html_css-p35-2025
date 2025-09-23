@@ -286,4 +286,127 @@ body {
 *::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.22); border-radius: 999px; }
 *::-webkit-scrollbar-track { background: transparent; }
 
+/* Landing page khusus */
+body.landing {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: radial-gradient(circle at top left, #1565C0, transparent),
+              var(--bg);
+  text-align: center;
+}
+
+.landing__content {
+  max-width: 600px;
+  padding: 40px;
+}
+
+.landing__content h1 {
+  font-size: 2.2rem;
+  margin-bottom: 16px;
+  color: var(--accent);
+}
+
+.landing__content p {
+  margin-bottom: 24px;
+  color: var(--text-dim);
+}
+
+.landing__content .btn {
+  padding: 12px 24px;
+  font-size: 1rem;
+}
+
+/* Foto profil bulat di landing */
+.profile-pic {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid var(--accent);
+  margin-bottom: 20px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+/* Animasi fade-in turun dari atas */
+@keyframes slideDownFade {
+  0% {
+    opacity: 0;
+    transform: translateY(-40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* apply ke kontainer utama */
+.landing__content {
+  max-width: 600px;
+  padding: 40px;
+  animation: slideDownFade 1s ease-out both;
+}
+
+/* kalau mau elemen muncul berurutan (staggered) */
+.profile-pic {
+  animation: slideDownFade 1s ease-out both;
+  animation-delay: 0.2s;
+}
+
+.landing__content h1 {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+  color: #ffffff; /* Ganti warna jadi gelap netral, biar nggak nabrak */
+}
+
+.landing__content p {
+  animation: slideDownFade 1s ease-out both;
+  animation-delay: 0.6s;
+}
+
+.landing__content .btn {
+  animation: slideDownFade 1s ease-out both;
+  animation-delay: 0.8s;
+}
+
+section.card {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  padding: 24px;
+}
+
+.section-title {
+  margin-bottom: 16px;
+  font-size: 1.5rem;
+  color: #ffffff;
+}
+
+.list__item {
+  margin-bottom: 12px;
+}
+
+.list__title {
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.nav__link {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.nav__link:hover {
+  background: rgba(255,255,255,0.2);
+  color: var(--accent);
+}
+
+.nav__link.is-active {
+  background: #fff;     /* background putih */
+  color: #000f72;          /* teks jadi hitam biar kontras */
+}
 
